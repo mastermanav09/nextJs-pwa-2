@@ -15,7 +15,7 @@ const Services = (props) => {
 
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-8">
           {props.servicesData.map((service) => (
-            <Card service={service} />
+            <Card key={service.id} service={service} />
           ))}
         </div>
       </div>
